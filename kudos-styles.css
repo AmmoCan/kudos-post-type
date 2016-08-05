@@ -1,0 +1,85 @@
+/*
+Plugin Name: Kudos Post Type
+Plugin URI: http://2-drops.com/
+Description: A plugin that will create a custom post type for displaying testimonials.
+Version: 1.0
+Author: AmmoCan
+Author URI: http://www.linkedin.com/in/ammocan
+License: GPL3 - https://www.gnu.org/licenses/gpl-3.0-standalone.html
+*/
+/*-----------------------------------------------------------------------------------*/
+/* Kudos frontend  stylesheet kudos-styles.css                                       */
+/*-----------------------------------------------------------------------------------*/
+
+/* Make sure the testimonial page title can breathe */
+.testimonial-title.page-title { padding-left: 9%; }
+
+/* Make sure there are no bottom-borders or box-shadows on any anchor elements */
+.testimonial-content.entry-content a { border-bottom: none; box-shadow: none; }
+
+/* Styling for the client's thumbnail image and it's respective anchor element */
+.th {
+  border: solid 4px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  color: #007acc;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+  transition: all 200ms ease-out;
+}
+
+.th:hover, .th:focus {
+  box-shadow: 0 0 6px 1px currentcolor;
+}
+
+.testimonial-img { padding-top: 5%; text-align: center; }
+
+.testimonial-img .th { border-radius: 50%; }
+
+.testimonial-img a { display: inline-block; }
+
+/* Styling for the client's link, name and company meta info */
+.client-info {
+  position: relative;
+  text-align: center;
+  z-index: 50;
+}
+
+/* Styling for the client's testimonial */
+.post-excerpt blockquote {
+  border-left: 15px solid currentcolor;
+  border-right: 2px solid currentcolor;
+  color: inherit;
+  display:block;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0 0 20px;
+  padding: 15px 20px 15px 45px;
+  position: relative;
+  text-align: justify;
+}
+
+.post-excerpt blockquote::before {
+  color: currentcolor;
+  content: "\201C";
+  font-family: inherit;
+  font-size: 3.75rem;
+  font-weight: bold;
+  left: .3rem;
+  position: absolute;
+  top: -1rem;
+}
+
+.post-excerpt blockquote::after { content: ""; }
+
+.post-excerpt blockquote a {
+  color: currentcolor;
+  cursor: pointer;
+  padding: 0 3px;
+  text-decoration: none;
+}
+
+.post-excerpt blockquote a:hover { color: currentcolor; }
+
+.post-excerpt blockquote em { font-style: italic; }
