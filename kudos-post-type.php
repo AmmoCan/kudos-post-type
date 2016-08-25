@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Kudos Post Type
-Plugin URI: http://2-drops.com/
+Plugin URI: https://github.com/AmmoCan/kudos-post-type
 Description: A plugin that will create a custom post type for displaying testimonials.
 Version: 1.0
 Author: AmmoCan
